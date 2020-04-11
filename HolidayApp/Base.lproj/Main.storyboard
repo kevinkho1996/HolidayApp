@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="HolidayApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8U-ZJ-O2c">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GYY-Z1-yZL">
+                                        <rect key="frame" x="36" y="379" width="342" height="138"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See what's happening this holiday season" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ax-hW-9Uz">
+                                                <rect key="frame" x="0.0" y="0.0" width="342" height="72"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYb-3m-AlT">
+                                                <rect key="frame" x="0.0" y="82" width="342" height="56"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="0sg-t5-7UM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <state key="normal" title="Get Started">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="getstartedButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOm-7c-BVT"/>
+                                                    <segue destination="0MB-KF-Ci1" kind="show" id="PSG-1m-OP2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="GYY-Z1-yZL" firstAttribute="centerY" secondItem="g8U-ZJ-O2c" secondAttribute="centerY" id="UCI-wX-pBL"/>
+                                    <constraint firstAttribute="trailing" secondItem="GYY-Z1-yZL" secondAttribute="trailing" constant="36" id="YRS-iA-jjy"/>
+                                    <constraint firstItem="GYY-Z1-yZL" firstAttribute="leading" secondItem="g8U-ZJ-O2c" secondAttribute="leading" constant="36" id="s4K-4E-5iO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g8U-ZJ-O2c" secondAttribute="bottom" constant="-34" id="H7l-EM-de8"/>
+                            <constraint firstItem="g8U-ZJ-O2c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LQt-Js-eMA"/>
+                            <constraint firstItem="g8U-ZJ-O2c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="UxJ-SX-xGI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g8U-ZJ-O2c" secondAttribute="trailing" id="wxL-BP-aO5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="darkView" destination="g8U-ZJ-O2c" id="hMy-pJ-2aL"/>
+                        <outlet property="getstartedButton" destination="xYb-3m-AlT" id="UK4-n1-cpG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PiK-Wl-yEv">
+            <objects>
+                <viewController storyboardIdentifier="mainAppViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="0MB-KF-Ci1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nJ7-db-ADI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="swE-Oi-LWg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="882"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4sn-Rj-Zs3" firstAttribute="bottom" secondItem="swE-Oi-LWg" secondAttribute="bottom" constant="-20" id="1gU-Nr-kzW"/>
+                            <constraint firstItem="4sn-Rj-Zs3" firstAttribute="trailing" secondItem="swE-Oi-LWg" secondAttribute="trailing" id="C9A-VR-f6b"/>
+                            <constraint firstItem="swE-Oi-LWg" firstAttribute="top" secondItem="4sn-Rj-Zs3" secondAttribute="top" constant="-44" id="QOR-3j-kzG"/>
+                            <constraint firstItem="swE-Oi-LWg" firstAttribute="leading" secondItem="4sn-Rj-Zs3" secondAttribute="leading" id="TLp-8q-5Ls"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4sn-Rj-Zs3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="s9o-fY-nj1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jcm-gJ-mnu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.75362318840587" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home" width="414" height="896"/>
+    </resources>
+</document>
